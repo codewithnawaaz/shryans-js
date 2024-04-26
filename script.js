@@ -168,3 +168,19 @@ const arr1 = [1, 2, 3, 4, 5, 6, 7];
 arr1.forEach(function (val, i, arr) {
   console.log(`  ${i}. ${val * 2}  `);
 });
+// **********TRY AND CATH
+
+function ab(a, b) {
+  try {
+    if (b === 0) {
+      throw Error(" 0  cant divide a it is infinte");
+    } else {
+      console.log(a / b);
+    }
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+ab(1, 0);
+ab(1, 1);
